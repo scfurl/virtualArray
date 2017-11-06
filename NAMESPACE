@@ -1,0 +1,48 @@
+# Export all names
+#exportPattern(".")
+export(virtualArrayBuildExprs,
+       virtualArrayBuildfData,
+       virtualArrayBuildSampleInfo,
+       #virtualArrayBuildSingleSampleInfo,
+	   virtualArrayComBat,
+	   virtualArrayCompile,
+	   virtualArrayDirs,
+	   virtualArrayExpressionSets,
+	   virtualArrayHclust,
+	   virtualArrayLoadRaw,
+	   virtualArrayMergeRecurse,
+	   normalize.ExpressionSet.gq,
+	   normalize.ExpressionSet.mrs,
+	   normalize.ExpressionSet.qd,
+	   normalize.ExpressionSet.nordi,
+	   normalize.ExpressionSet.mc
+)
+
+# Import all packages listed as Imports or Depends
+import(BiocGenerics)
+import(utils)
+import(methods)
+#import(plyr)
+#import(preprocessCore)
+importMethodsFrom(AnnotationDbi, as.list, colnames, ls,
+	  ncol, nrow, toTable)
+importMethodsFrom(Biobase, annotation, "annotation<-", exprs,
+	  "exprs<-", fData, "fData<-", "pData", "pData<-", sampleNames,
+	  "sampleNames<-", varMetadata, "varMetadata<-")
+importMethodsFrom(GEOquery, dataTable, Table)
+importFrom(affy, justRMA, ReadAffy)
+#importFrom(preprocessCore, normalize.quantiles)
+importFrom(affyPLM, normalize.ExpressionSet.quantiles)
+importFrom(gcrma, justGCRMA)
+importFrom(GEOquery, getGEO)
+importFrom(graphics, lines, par, plot, text, title)
+importFrom(methods, new)
+#importFrom("plyr", is.formula, rbind.fill)
+#importFrom("reshape", recast, melt, cast, sort_df)
+importFrom("reshape2", recast, melt)
+importFrom(stats, density, dnorm, median, na.omit, qqline, qqnorm,
+			qqplot, rgamma, var)
+importFrom(utils, installed.packages, read.csv, read.table,
+			write.table)
+importFrom(tseries, jarque.bera.test)
+importFrom(outliers, grubbs.test)

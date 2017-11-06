@@ -1,0 +1,14 @@
+citHeader("To cite package 'virtualArray' in publications use:")
+     year <- 2013
+     vers <- paste("R package version", meta$Version)
+     citEntry(entry="Article",
+              title = "virtualArray: a R/bioconductor package to merge raw data from different microarray platforms",
+              author = personList(person("Andreas Heider"),person("Rüdiger Alt")),
+              year = year,
+              note = vers,
+              textVersion =
+              paste("Andreas Heider and  Rüdiger Alt (",year,"). virtualArray: a R/bioconductor package to merge raw data from different microarray platforms. ",
+                    vers, ".", sep=""),
+              journal="BMC Bioinformatics",
+              volume=14,
+              pages=75)

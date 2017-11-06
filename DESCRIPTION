@@ -1,0 +1,25 @@
+Package: virtualArray
+Type: Package
+Encoding: latin1
+Title: Build virtual array from different microarray platforms
+Version: 1.8.0
+Date: 2012-12-19
+Author: Andreas Heider
+Maintainer: Andreas Heider <aheider@trm.uni-leipzig.de>
+Description: This package permits the user to combine raw data of
+        different microarray platforms into one virtual array. It
+        consists of several functions that act subsequently in a
+        semi-automatic way. Doing as much of the data combination and
+        letting the user concentrate on analysing the resulting virtual
+        array.
+Depends: R (>= 2.15.0), BiocGenerics, methods, plyr, preprocessCore
+Imports: affy, affyPLM, AnnotationDbi, Biobase, gcrma, GEOquery,
+        graphics, methods, reshape2, stats, utils, tseries, outliers
+Suggests: affydata, plier, limma, lumi, org.Hs.eg.db
+Enhances: multicore,BiocParallel
+License: GPL-3
+LazyLoad: yes
+LazyData: yes
+biocViews: Microarray, OneChannel, DataImport, Preprocessing,
+        MultipleComparison
+Packaged: 2014-04-12 06:49:45 UTC; biocbuild
